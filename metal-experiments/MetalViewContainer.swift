@@ -11,7 +11,10 @@ import Foundation
 struct MetalViewContainer: NSViewRepresentable {
     
     func makeNSView(context: Context) -> MTKView {
-        MTKView()
+        let mtkView = MTKView()
+        mtkView.delegate = context.coordinator
+        
+        return mtkView
     }
     
     func updateNSView(_ nsView: MTKView, context: Context) {
@@ -19,4 +22,25 @@ struct MetalViewContainer: NSViewRepresentable {
     
     typealias NSViewType = MTKView
     
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+    
+    class Coordinator: NSObject, MTKViewDelegate {
+        
+        func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
+        
+        }
+        
+        func draw(in view: MTKView) {
+        
+        }
+    }
 }
+
+
+// MTKViewDelegate
+
+
+
