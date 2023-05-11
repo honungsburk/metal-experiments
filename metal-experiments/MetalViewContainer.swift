@@ -15,7 +15,7 @@ struct MetalViewContainer: NSViewRepresentable {
     
     
     func makeNSView(context: Context) -> MTKView {
-        let mtkView = MTKView()//(frame: NSMakeRect(0, 0, 1080, 720))
+        let mtkView = MTKView(frame: NSMakeRect(0, 0, 1080, 720))
         mtkView.delegate = context.coordinator
         mtkView.autoresizingMask = [.height, .width]
         
@@ -53,6 +53,8 @@ struct MetalViewContainer: NSViewRepresentable {
                 fatalError( "Failed to get the system's default Metal device." )
             }
             self.device = device
+            
+            print(device.debugDescription ?? "no debug description")
             
             // A queue that pushes buffers to the screen in the correct order.
             guard let mtlCommandQueue = device.makeCommandQueue() else {
@@ -116,8 +118,8 @@ struct MetalViewContainer: NSViewRepresentable {
             // If there's a valid render pass descriptor, use it to render to the current drawable.
            
             if  let currentDrawable = view.currentDrawable,
-                let onscreenDescriptor = view.currentRenderPassDescriptor,
-                let renderCommandEncoder = onscreenCommandBuffer.makeRenderCommandEncoder(descriptor: onscreenDescriptor) {
+                let renderPassDescriptor = view.currentRenderPassDescriptor,
+                let renderCommandEncoder = onscreenCommandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor) {
               
                 //let commandBuffer =  self.commandQueue.makeCommandBuffer()
                 renderCommandEncoder.setRenderPipelineState(renderPipelineState)
@@ -132,8 +134,6 @@ struct MetalViewContainer: NSViewRepresentable {
                 onscreenCommandBuffer.commit()
                 print("commit")
             }
-            
-            print("draw")
         
         }
     }

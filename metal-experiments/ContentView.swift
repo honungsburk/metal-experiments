@@ -3,7 +3,7 @@ import MetalKit
 
 struct ContentView: View {
     var body: some View {
-        MetalViewContainer()
+        GameViewContainer()
     }
 }
 

@@ -13,6 +13,8 @@
 		E2DC17A02A0B97A000E5FC74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC179F2A0B97A000E5FC74 /* Preview Assets.xcassets */; };
 		E2DC17A82A0BB14D00E5FC74 /* MetalViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17A72A0BB14D00E5FC74 /* MetalViewContainer.swift */; };
 		E2DC17AB2A0D119900E5FC74 /* BasicShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17AA2A0D119900E5FC74 /* BasicShaders.metal */; };
+		E2DC17AF2A0D278E00E5FC74 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17AE2A0D278E00E5FC74 /* GameView.swift */; };
+		E2DC17B12A0D27C000E5FC74 /* GameViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17B02A0D27C000E5FC74 /* GameViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E2DC17A12A0B97A000E5FC74 /* metal_experiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metal_experiments.entitlements; sourceTree = "<group>"; };
 		E2DC17A72A0BB14D00E5FC74 /* MetalViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewContainer.swift; sourceTree = "<group>"; };
 		E2DC17AA2A0D119900E5FC74 /* BasicShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BasicShaders.metal; sourceTree = "<group>"; };
+		E2DC17AE2A0D278E00E5FC74 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E2DC17B02A0D27C000E5FC74 /* GameViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E2DC17A12A0B97A000E5FC74 /* metal_experiments.entitlements */,
 				E2DC179E2A0B97A000E5FC74 /* Preview Content */,
 				E2DC17A72A0BB14D00E5FC74 /* MetalViewContainer.swift */,
+				E2DC17AE2A0D278E00E5FC74 /* GameView.swift */,
+				E2DC17B02A0D27C000E5FC74 /* GameViewContainer.swift */,
 			);
 			path = "metal-experiments";
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 				E2DC17992A0B979F00E5FC74 /* metal_experimentsApp.swift in Sources */,
 				E2DC17A82A0BB14D00E5FC74 /* MetalViewContainer.swift in Sources */,
 				E2DC17AB2A0D119900E5FC74 /* BasicShaders.metal in Sources */,
+				E2DC17B12A0D27C000E5FC74 /* GameViewContainer.swift in Sources */,
+				E2DC17AF2A0D278E00E5FC74 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
