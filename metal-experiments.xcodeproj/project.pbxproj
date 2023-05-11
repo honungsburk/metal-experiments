@@ -12,6 +12,7 @@
 		E2DC179D2A0B97A000E5FC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC179C2A0B97A000E5FC74 /* Assets.xcassets */; };
 		E2DC17A02A0B97A000E5FC74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DC179F2A0B97A000E5FC74 /* Preview Assets.xcassets */; };
 		E2DC17A82A0BB14D00E5FC74 /* MetalViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17A72A0BB14D00E5FC74 /* MetalViewContainer.swift */; };
+		E2DC17AB2A0D119900E5FC74 /* BasicShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E2DC17AA2A0D119900E5FC74 /* BasicShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E2DC179F2A0B97A000E5FC74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2DC17A12A0B97A000E5FC74 /* metal_experiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metal_experiments.entitlements; sourceTree = "<group>"; };
 		E2DC17A72A0BB14D00E5FC74 /* MetalViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewContainer.swift; sourceTree = "<group>"; };
+		E2DC17AA2A0D119900E5FC74 /* BasicShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BasicShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		E2DC17972A0B979F00E5FC74 /* metal-experiments */ = {
 			isa = PBXGroup;
 			children = (
+				E2DC17A92A0D10FD00E5FC74 /* Metal */,
 				E2DC17982A0B979F00E5FC74 /* metal_experimentsApp.swift */,
 				E2DC179A2A0B979F00E5FC74 /* ContentView.swift */,
 				E2DC179C2A0B97A000E5FC74 /* Assets.xcassets */,
@@ -70,6 +73,14 @@
 				E2DC179F2A0B97A000E5FC74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2DC17A92A0D10FD00E5FC74 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				E2DC17AA2A0D119900E5FC74 /* BasicShaders.metal */,
+			);
+			path = Metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				E2DC179B2A0B979F00E5FC74 /* ContentView.swift in Sources */,
 				E2DC17992A0B979F00E5FC74 /* metal_experimentsApp.swift in Sources */,
 				E2DC17A82A0BB14D00E5FC74 /* MetalViewContainer.swift in Sources */,
+				E2DC17AB2A0D119900E5FC74 /* BasicShaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
